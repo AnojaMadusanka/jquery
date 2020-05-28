@@ -1,0 +1,28 @@
+<!-- Work with events -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $(".c1").click(function(){
+                $("h1").hide(1000);
+            });
+            $(".c2").click(function(){
+                $("h1").show(1000);
+            });
+            $(".c3").dblclick(function(){
+                $("h1").toggle(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <button class="c1">Click me for hide</button>
+    <button class="c2">Click me for show</button>
+    <button class="c3">Click me for show & hide</button>
+</body>
+</html>
